@@ -1,0 +1,27 @@
+1) $ git version
+2)
+  $ git config --global user.name "saivignesh2001s"
+  $ git config --global user.email "saivignesh2001s@gmail.com"
+3) 
+  $ git config --global --list
+4)
+  notepad connect
+  control panel->advanced system features->Environmental variables->Edit user path
+ $git config --global core.editor"C:\Program Files\Notepad++\notepad++.exe -multiInst -nosession"
+ $git config --global -e
+5)
+local repository->remote repository
+$git init demogit
+cd demogit
+ls -al
+$echo "welcome to version control" >> welcome.txt
+cat welcome.txt
+$git status
+$git add welcome.txt
+$git commit
+$git status
+$git remote add origin https://github.com/saivignesh2001s/demogit.git
+$git push -u origin master
+$git pull origin master
+$git commit
+$git push -u origin master
